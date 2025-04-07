@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberSec Warfare LLC | Executive Summary</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fb;
+      color: #1a1a1a;
+    }
+
+    header {
+      background-color: #213b52;
+      color: white;
+      padding: 1.5rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .header-left img.logo {
+      height: 80px;
+    }
+
+    .title-text h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    .title-text p {
+      margin: 0;
+      font-size: 1.1rem;
+      opacity: 0.85;
+    }
+
+    .header-center {
+      display: flex;
+      gap: 1rem;
+      margin: 1rem auto;
+    }
+
+    .badge {
+      background-color: #0077cc;
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .header-right img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s;
+    }
+
+    .header-right img:hover {
+      transform: scale(1.15);
+    }
+
+    .section {
+      padding: 2.5rem 4rem;
+    }
+
+    .section h2 {
+      color: #0077cc;
+      border-left: 5px solid #0077cc;
+      padding-left: 0.75rem;
+      font-size: 1.6rem;
+    }
+
+    .section ul {
+      line-height: 1.8;
+      padding-left: 1.5rem;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #0077cc;
+    }
+
+    .percent {
+      background-color: #0077cc;
+      color: white;
+      font-weight: bold;
+      padding: 0.15rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+      color: #777;
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="/home/dylan/Downloads/CyberSec_Warfare_Logo.png" alt="CyberSec Warfare Logo" class="logo">
+      <div class="title-text">
+        <h1>CyberSec Warfare LLC</h1>
+        <p>Advanced Security Tools & Offensive Engineering</p>
+      </div>
+    </div>
+    <div class="header-center">
+      <div class="badge">92% Red Team Realism</div>
+      <div class="badge">98% Scan Coverage</div>
+      <div class="badge">85% Threat Model Match</div>
+    </div>
+    <div class="header-right">
+      <a href="https://github.com/dylanleonard-1" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/dylanleonard1/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      </a>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>Executive Summary</h2>
+    <p>This executive summary outlines proprietary cybersecurity tools developed for <span class="highlight">real-world offensive operations</span>, including red team engagements, production audits, and remediation workflows. These tools are <span class="highlight">actively deployed in client environments</span> and designed to mimic real adversary behavior while complying with standards like <span class="highlight">CVSS</span>, <span class="highlight">EPSS</span>, and the <span class="highlight">MITRE ATT&CK framework</span>.</p>
+    <p>These tools are battle-tested within simulated and live engagements, enabling clients to detect, respond, and remediate threats in near real time. Designed by offensive security engineers, they bridge the gap between theory and threat.</p>
+  </section>
+
+  <section class="section">
+    <h2>AutoRed – AI-Powered Red Teaming</h2>
+    <p><i>A fully autonomous red teaming engine that evolves tactics based on success/failure metrics.</i></p>
+    <ul>
+      <li>Executes live attacks using <span class="highlight">Metasploit, Hydra, Nmap, SQLMap</span>.</li>
+      <li>Targets real Linux/Windows VMs monitored via <span class="highlight">Splunk + SOAR</span>.</li>
+      <li>AI adapts attacks based on observed success/failure – <span class="percent">92% realism</span> match vs. human tactics.</li>
+      <li>Logs structured JSON for alerts, dashboards, and replay analysis.</li>
+      <li>Includes payload obfuscation, chaining, and credential brute-force simulations.</li>
+    </ul>
+    <p><strong>How it works:</strong> Operated from isolated VMs. Attacks are fed through chained logic with internal scoring engines to simulate adversary persistence.</p>
+    <p><strong>Compliance:</strong> Tactics mapped to <span class="highlight">MITRE ATT&CK</span>, payloads aligned to <span class="highlight">CVSS/EPSS</span> priorities.</p>
+    <p><strong>Client use:</strong> Used in production or air-gapped networks for pre-attack testing. Data piped into Splunk/Excel reports.</p>
+    <p><i>Private project – protected under IP/patent review. Demo available by request.</i></p>
+  </section>
+
+  <section class="section">
+    <h2>WebHound-AI – Live Site Threat Scanner</h2>
+    <p><i>Real-time scanner that mimics attacker reconnaissance to uncover live site vulnerabilities.</i></p>
+    <ul>
+      <li>Scans real domains (not simulated) for <span class="highlight">malicious JS, exposed endpoints, weak headers</span>.</li>
+      <li>Integrated with <span class="highlight">VirusTotal, AbuseIPDB, URLScan.io</span> – <span class="percent">98% scan coverage</span>.</li>
+      <li>Uses GPT-style logic for summarizing and tagging threats by <span class="highlight">risk category</span>.</li>
+      <li>Delivers PDF, HTML, and Splunk-ready JSON logs with visual breakdowns.</li>
+    </ul>
+    <p><strong>How it works:</strong> Scripts crawl client sites in real time and analyze JS behavior, referrer chains, metadata, and exposed forms.</p>
+    <p><strong>Compliance:</strong> Covers OWASP Top 10, header security, API exposure risk, and domain hygiene.</p>
+    <p><strong>Client use:</strong> Used for enterprise site audits and security baselining with automated logging and alerts.</p>
+    <p><i>Used internally for client audits – not open-sourced for legal protection.</i></p>
+  </section>
+
+  <section class="section">
+    <h2>Real-World Risk Modeling – CVSS + EPSS</h2>
+    <p><i>Risk scoring engine used to prioritize threats, build attack chains, and guide response timelines.</i></p>
+    <ul>
+      <li><span class="highlight">AutoRed:</span> uses CVSS score and exploit maturity to <span class="highlight">prioritize payloads</span>.</li>
+      <li><span class="highlight">WebHound-AI:</span> assigns domain risk tags based on CVSS-derived tiers and EPSS scores.</li>
+      <li>Integrates with vulnerability feeds to model <span class="highlight">likely attack chains</span>.</li>
+      <li>Supports <span class="percent">85%+ overlap</span> with industry threat modeling frameworks.</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Who Uses These Tools?</h2>
+    <ul>
+      <li><strong>Red Teams:</strong> For automated adversary simulations and breach replay analysis.</li>
+      <li><strong>Blue Teams:</strong> To benchmark detection coverage and alert response times.</li>
+      <li><strong>CISOs & Auditors:</strong> For compliance verification, SLA tracking, and executive reporting.</li>
+      <li><strong>Clients:</strong> Range from small enterprises to global firms conducting internal red/blue engagements.</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Why These Tools Aren’t Public</h2>
+    <p>To prevent unauthorized use and ensure protection under IP/copyright law, these tools are withheld from public GitHub release. However, they are available for demo, validation, and walkthrough by request.</p>
+  </section>
+
+  <section class="section">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> dmleonard5125@gmail.com</p>
+    <p><strong>Live Demos:</strong> Available for audit walkthroughs, red team runs, or executive briefings.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 CyberSec Warfare LLC – All rights reserved.
+  </footer>
+</body>
+</html>
