@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CyberSec Warfare LLC | Executive Summary</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -16,62 +17,57 @@
     header {
       background-color: #213b52;
       color: white;
-      padding: 1.5rem 2.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
+      padding: 3rem 2rem 2.5rem;
+      text-align: center;
     }
 
-    .header-left {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
+    header .logo {
+      max-height: 90px;
+      margin-bottom: 1rem;
     }
 
-    .header-left img.logo {
-      height: 80px;
+    h1 {
+      font-size: 2.6rem;
+      margin: 0.2rem 0 0.4rem;
     }
 
-    .title-text h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-
-    .title-text p {
-      margin: 0;
+    .tagline {
       font-size: 1.1rem;
       opacity: 0.85;
+      margin-bottom: 1.2rem;
     }
 
-    .header-center {
+    .badges {
       display: flex;
+      justify-content: center;
       gap: 1rem;
-      margin: 1rem auto;
+      flex-wrap: wrap;
+      margin-bottom: 1.2rem;
     }
 
     .badge {
       background-color: #0077cc;
       color: white;
-      padding: 0.4rem 0.8rem;
+      padding: 0.4rem 0.9rem;
       border-radius: 8px;
       font-weight: bold;
       font-size: 0.95rem;
     }
 
-    .header-right {
+    .social-icons {
       display: flex;
-      align-items: center;
-      gap: 1rem;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-top: 0.5rem;
     }
 
-    .header-right img {
+    .social-icons img {
       width: 40px;
       height: 40px;
       transition: transform 0.3s;
     }
 
-    .header-right img:hover {
+    .social-icons img:hover {
       transform: scale(1.15);
     }
 
@@ -84,6 +80,7 @@
       border-left: 5px solid #0077cc;
       padding-left: 0.75rem;
       font-size: 1.6rem;
+      margin-bottom: 1rem;
     }
 
     .section ul {
@@ -105,6 +102,34 @@
       font-size: 0.9rem;
     }
 
+    a {
+      color: #0056cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 2rem 1rem;
+      }
+
+      .section {
+        padding: 1.5rem 1.2rem;
+      }
+
+      .badges, .social-icons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo {
+        max-height: 70px;
+      }
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -116,35 +141,31 @@
 </head>
 <body>
   <header>
-    <div class="header-left">
-      <img src="/home/dylan/Downloads/CyberSec_Warfare_Logo.png" alt="CyberSec Warfare Logo" class="logo">
-      <div class="title-text">
-        <h1>CyberSec Warfare LLC</h1>
-        <p>Advanced Security Tools & Offensive Engineering</p>
-      </div>
-    </div>
-    <div class="header-center">
+    <img src="https://raw.githubusercontent.com/dylanleonard-1/cybersec-summary/main/CyberSec_Warfare_Logo.png" alt="CyberSec Warfare Logo" class="logo" />
+    <h1>CyberSec Warfare LLC</h1>
+    <div class="tagline">Simulating the adversary. Securing the future.</div>
+    <div class="badges">
       <div class="badge">92% Red Team Realism</div>
       <div class="badge">98% Scan Coverage</div>
       <div class="badge">85% Threat Model Match</div>
     </div>
-    <div class="header-right">
+    <div class="social-icons">
       <a href="https://github.com/dylanleonard-1" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"/>
       </a>
       <a href="https://www.linkedin.com/in/dylanleonard1/" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"/>
       </a>
     </div>
   </header>
 
-  <section class="section">
+  <section class="section" data-aos="fade-up">
     <h2>Executive Summary</h2>
     <p>This executive summary outlines proprietary cybersecurity tools developed for <span class="highlight">real-world offensive operations</span>, including red team engagements, production audits, and remediation workflows. These tools are <span class="highlight">actively deployed in client environments</span> and designed to mimic real adversary behavior while complying with standards like <span class="highlight">CVSS</span>, <span class="highlight">EPSS</span>, and the <span class="highlight">MITRE ATT&CK framework</span>.</p>
     <p>These tools are battle-tested within simulated and live engagements, enabling clients to detect, respond, and remediate threats in near real time. Designed by offensive security engineers, they bridge the gap between theory and threat.</p>
   </section>
 
-  <section class="section">
+  <section class="section" data-aos="fade-up">
     <h2>AutoRed – AI-Powered Red Teaming</h2>
     <p><i>A fully autonomous red teaming engine that evolves tactics based on success/failure metrics.</i></p>
     <ul>
@@ -160,7 +181,7 @@
     <p><i>Private project – protected under IP/patent review. Demo available by request.</i></p>
   </section>
 
-  <section class="section">
+  <section class="section" data-aos="fade-up">
     <h2>WebHound-AI – Live Site Threat Scanner</h2>
     <p><i>Real-time scanner that mimics attacker reconnaissance to uncover live site vulnerabilities.</i></p>
     <ul>
@@ -175,7 +196,7 @@
     <p><i>Used internally for client audits – not open-sourced for legal protection.</i></p>
   </section>
 
-  <section class="section">
+  <section class="section" data-aos="fade-up">
     <h2>Real-World Risk Modeling – CVSS + EPSS</h2>
     <p><i>Risk scoring engine used to prioritize threats, build attack chains, and guide response timelines.</i></p>
     <ul>
@@ -186,7 +207,7 @@
     </ul>
   </section>
 
-  <section class="section">
+  <section class="section" data-aos="fade-up">
     <h2>Who Uses These Tools?</h2>
     <ul>
       <li><strong>Red Teams:</strong> For automated adversary simulations and breach replay analysis.</li>
@@ -196,19 +217,39 @@
     </ul>
   </section>
 
-  <section class="section">
+  <section class="section" data-aos="fade-up">
     <h2>Why These Tools Aren’t Public</h2>
     <p>To prevent unauthorized use and ensure protection under IP/copyright law, these tools are withheld from public GitHub release. However, they are available for demo, validation, and walkthrough by request.</p>
   </section>
 
-  <section class="section">
+  <section class="section" data-aos="fade-up">
     <h2>Contact</h2>
-    <p><strong>Email:</strong> dmleonard5125@gmail.com</p>
+    <p><strong>Email:</strong> <a href="mailto:dmleonard5125@gmail.com">dmleonard5125@gmail.com</a></p>
     <p><strong>Live Demos:</strong> Available for audit walkthroughs, red team runs, or executive briefings.</p>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>Real-World Use Cases</h2>
+    <ul>
+      <li><strong>🔐 Internal Red Team:</strong> Simulated phishing and lateral movement inside a financial client’s zero-trust network. Detected and remediated in <span class="highlight">under 6 minutes</span>.</li>
+      <li><strong>🚨 CVE-Based Alerting:</strong> AutoRed ran exploit chains based on CVSS/EPSS >8.5, alerting SOAR within <span class="highlight">seconds of payload drop</span>.</li>
+      <li><strong>🛡️ Executive Audit:</strong> WebHound-AI scanned a live site, flagged 3 JS exfil scripts + 1 unlinked login page. Delivered <span class="highlight">Splunk JSON + PDF</span> report.</li>
+    </ul>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>Download</h2>
+    <p>
+      <a href="CyberSec_Tools.pdf" download class="badge">📄 Download PDF Summary</a>
+    </p>
   </section>
 
   <footer>
     &copy; 2025 CyberSec Warfare LLC – All rights reserved.
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 600, once: true });</script>
 </body>
 </html>
+
